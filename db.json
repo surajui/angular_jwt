@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "username": "dasf",
+      "mobileno": "a01235884",
+      "email": "sadfa@asdfas",
+      "password": "sdfasfa",
+      "role": "sdafasf",
+      "img": "C:\\fakepath\\Screenshot (148).png",
+      "id": 1
+    },
+    {
+      "username": "suraj",
+      "mobileno": "8790519812",
+      "email": "sable@gmail.comm",
+      "password": "suraj8790",
+      "role": "hydrabad",
+      "img": "",
+      "id": 2
+    },
+    {
+      "username": "ajay",
+      "mobileno": "0123456789",
+      "email": "ajya@gmail.com",
+      "password": "suraj8790",
+      "role": "dsfasf",
+      "files": "",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "username": "sdfas",
+      "mobileno": "8790651982",
+      "email": "sadfa@dfdfg",
+      "password": "dsadfsa",
+      "role": "sdfsafa",
+      "file": "C:\\fakepath\\Screenshot (3).png",
+      "id": 5
+    },
+    {
+      "username": "",
+      "mobileno": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "file": "C:\\fakepath\\Screenshot (153).png",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "institute": "",
+      "passingYear": "",
+      "skills": "asdfa",
+      "percentage": "345",
+      "medium": "sadfas",
+      "board": "asdfa",
+      "specialization": "",
+      "eduType": "Full time",
+      "id": 8
+    },
+    {
+      "institute": "sdfasf",
+      "passingYear": "",
+      "skills": "asdfa",
+      "percentage": "345",
+      "medium": "sadfas",
+      "board": "asdfa",
+      "specialization": "fasdfa",
+      "eduType": "Full time",
+      "id": 9
+    },
+    {
+      "username": "sdafas",
+      "mobileno": "43452321432",
+      "email": "sdfas@dfsda",
+      "password": "sdafsaf",
+      "role": "sdfsfas",
+      "file": "",
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "username": "sdfa",
+      "mobileno": "21433242345",
+      "email": "sdfas",
+      "password": "sdfasf",
+      "role": "werre",
+      "file": "C:\\fakepath\\Screenshot (153).png",
+      "id": 12
+    },
+    {
+      "id": 13
+    }
+  ],
+  "profile": {
+    "institute": "",
+    "passingYear": "",
+    "skills": "sdafasf",
+    "percentage": "erwtwe",
+    "medium": "sdfas",
+    "board": "sdfaf",
+    "specialization": "",
+    "eduType": "Full time"
+  }
+}

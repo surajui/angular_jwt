@@ -1,0 +1,123 @@
+
+<div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h5>Build My Profile</h5>
+                <div class="card w-120">
+                    <div class="card-body">
+                        <span><i class="fa fa-graduation-cap fa-2x"></i><b>I'm a</b>
+                        <select>
+                            <option>Fresher</option>
+                            <option>Profession</option>
+                        </select></span>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-8">
+            <h5 class="text-center text-success">Education Details</h5>
+            
+        <form [formGroup]="educat" (ngSubmit)="onSubmit()">
+           
+            <div class="form-group">
+                    <label>Higher Qualification<span class="text-danger">*</span></label>
+                 <select #select formControlName="highestEdu" class="form-control">
+              <option  [ngValue]="Individual">10th Class</option>
+              <option  [ngValue]="Business">12th Class</option>
+              <option [ngValue]="aviation">Aviation</option>
+              <option  [ngValue]="BHM">B.H.M</option>
+              <option  [ngValue]="BARCH">B.ARCH</option>
+            </select>
+        </div>
+        <!-- 10th class ngif condition start -->
+                <div *ngIf="select.value[0]  === '0'">
+                        <label>Board<span class="text-danger">*</span></label>
+                        <input #input [required]="select.value[0] === '0'" formControlName="board" class="form-control" />
+                      </div>
+                <div *ngIf="select.value[0]  === '0'">
+                        <label>Medium<span class="text-danger">*</span></label>
+                        <input #input [required]="select.value[0] === '0'" formControlName="medium" class="form-control" />
+                      </div>
+                      <div *ngIf="select.value[0]  === '0'">
+                            <label>percentage<span class="text-danger">*</span></label>
+                            <input #input [required]="select.value[0] === '0'" formControlName="percentage" class="form-control" />
+                          </div>
+                          <!-- 10th class ngif condition end -->
+
+            <!-- 12th class ngif condition start -->
+           <div *ngIf="select.value[0]  === '1'">
+                        <label>Board<span class="text-danger">*</span></label>
+                        <input #input [required]="select.value[0] === '0'" formControlName="board" class="form-control" />
+                      </div>
+                <div *ngIf="select.value[0]  === '1'">
+                        <label>Medium<span class="text-danger">*</span></label>
+                        <input #input [required]="select.value[0] === '0'" formControlName="medium" class="form-control" />
+                      </div>
+                      <div *ngIf="select.value[0]  === '1'">
+                            <label>percentage<span class="text-danger">*</span></label>
+                            <input #input [required]="select.value[0] === '0'" formControlName="percentage" class="form-control" />
+                          </div>
+                          <!-- 12th class ngif condition end -->
+
+                           <!-- aviationclass ngif condition start -->
+                           <div *ngIf="select.value[0]  === '2'">
+                                <label>Specialization<span class="text-danger">*</span></label>
+                                <input #input [required]="select.value[0] === '0'" formControlName="specialization" class="form-control" />
+                              </div>
+                        <div *ngIf="select.value[0]  === '2'">
+                                <label>Insitute<span class="text-danger">*</span></label>
+                                <input #input [required]="select.value[0] === '0'" formControlName="institute" class="form-control" />
+                              </div>
+                              <!-- aviationclass ngif condition end -->
+<!-- B.H.M ngif condition start -->
+<div *ngIf="select.value[0]  === '3'">
+        <label>Specialization<span class="text-danger">*</span></label>
+        <input #input [required]="select.value[0] === '0'" formControlName="specialization" class="form-control" />
+      </div>
+<div *ngIf="select.value[0]  === '3'">
+        <label>Insitute<span class="text-danger">*</span></label>
+        <input #input [required]="select.value[0] === '0'" formControlName="institute" class="form-control" />
+      </div>
+      <!-- B.H.M ngif condition end -->
+
+      <!-- B.ARCH ngif condition start -->
+      <div *ngIf="select.value[0]  === '4'">
+            <label>Specialization<span class="text-danger">*</span></label>
+            <input #input [required]="select.value[0] === '0'" formControlName="specialization" class="form-control" />
+          </div>
+    <div *ngIf="select.value[0]  === '4'">
+            <label>Insitute<span class="text-danger">*</span></label>
+            <input #input [required]="select.value[0] === '0'" formControlName="institute" class="form-control" />
+          </div>
+   
+                  <div class="form-group">
+                          <label>Education type <span class="text-danger">*</span></label>
+                          <input type="radio" name="eduType" value="Full time" class="ml-4" formControlName="eduType">Full time
+                          <input type="radio" name="eduType" value="Part time"   class="ml-4" formControlName="eduType">Part time
+                          <input type="radio" name="eduType" value="Correspondence"  class="ml-4" formControlName="eduType">Correspondence
+                      </div>
+                      <div class="form-group">
+                              <label>Passing year <span class="text-danger">*</span></label>
+                              <select class="form-control" fromControlName="yearOfPassing">
+                                      <option value="">--Select--</option>
+                                      <option>2010</option>
+                                      <option>2011</option>
+                                      <option>2012</option>
+                                      <option>2013</option>
+                                      <option>2014</option>
+                                      <option>2015</option>
+                                      <option>2016</option>
+                                      <option>2017</option>
+                                  
+                                  </select>
+                          </div>
+                          <div class="form-group">
+                                  <label>Skills <span class="text-danger">*</span></label>
+                                  <input type="text" class="form-control" formControlName="skills">
+                              </div>   
+                              <div class="form-group">
+                                   <button class="btn btn-success">Submit</button>
+                                </div>
+            </form>
+            </div>
+            </div>
+            </div>
